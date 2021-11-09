@@ -1,0 +1,27 @@
+﻿@model EjercicioParcial.Models.automatico
+@{
+    ViewBag.Title="indexx";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("indexx", "automatico", FormMethod.Post))
+        {
+
+
+
+           <label>Monto:</label>
+           @Html.TextBoxFor(a => a.Dinero)
+
+           <input type="submit" />
+        }
+    </div>
+</body>
+</html>
